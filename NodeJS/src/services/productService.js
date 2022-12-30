@@ -7,7 +7,7 @@ let getAllProduct = (productID) => {
                  products = await db.Product.findAll({
                 })
             }
-            if(productID && productID !==' ALL') {
+            if(productID && productID != 'ALL') {
                  products = await db.Product.findOne({
                     where: {id: productID}
                 })
